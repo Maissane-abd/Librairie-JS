@@ -1,9 +1,4 @@
-import { book } from "./book.js";
-import { CompteBancaire } from "./CompteBancaire.js";
+import { Book } from "./book.js";
 
-book();
-
-const Maiss = new CompteBancaire("Msn", 100);
-console.log(Maiss.getSolde());
-console.log(Maiss.crediter(200));
-console.log(Maiss.getSolde());
+const Cyrano = new Book ("Cyrano de Bergerac", "Edmond Rostand")
+console.log(Cyrano.getDetails());
