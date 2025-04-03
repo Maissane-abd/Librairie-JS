@@ -1,3 +1,3 @@
-import { test } from "./module.js";
+import { book } from "./book.js";
 
-console.log(test(1,3));
+book();
