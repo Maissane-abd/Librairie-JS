@@ -1,21 +1,40 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Librairie JS</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bibliothèque en ligne</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>Bienvenue dans la bibliotheque en ligne de l'Haÿ-les-roses</h1>
+  <div class="container">
+    <h1>📚 Bibliothèque de l'Haÿ-les-Roses</h1>
+
+    <!-- Formulaire d'ajout de livre -->
     <h2>Ajouter un livre</h2>
-    <form action="" method="post">
-        <label for="title" name="title">Titre</label>
-        <input type="text" name="title">
-        <label for="autheur" name="autheur">Auteur</label>
-        <input type="text" name="autheur" id="">
-        <button type="submit">Ajouter</button>
+    <form id="addBookForm">
+      <label for="title">Titre</label>
+      <input type="text" id="title" required />
+      <label for="author">Auteur</label>
+      <input type="text" id="author" required />
+      <button type="submit">Ajouter</button>
     </form>
-    <script src="script.js" type="module"></script>
+
+    <!-- Liste des livres -->
+    <h2>📖 Liste des livres</h2>
+    <button id="listBooksBtn">Afficher les livres</button>
+    <ul id="bookList"></ul>
+
+    <!-- Formulaire de recherche -->
+    <h2>🔍 Rechercher un livre</h2>
+    <form id="searchForm">
+      <label for="searchTitle">Titre exact</label>
+      <input type="text" id="searchTitle" required />
+      <button type="submit">Rechercher</button>
+    </form>
+    <p id="searchResult"></p>
+  </div>
+
+  <script type="module" src="script.js"></script>
 </body>
 </html>
