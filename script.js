@@ -1,4 +1,5 @@
-import { Book, Library } from './library.js';
+import { Book } from "./book.js";
+import { Library } from "./library.js"
 
 // Créer une instance globale de la bibliothèque
 const library = new Library();
