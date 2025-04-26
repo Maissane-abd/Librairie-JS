@@ -1,16 +1,17 @@
+// Module pour les livres
 export class Book {
     title 
-    autor 
+    author 
 
     // Un constructeur acceptant un titre de livre et un auteur 
-    constructor(title, autor){
+    constructor(title, author){
         this.title = title;
-        this.autor = autor;
+        this.author = author;
     }
 
     // Méthode getDetails() qui retourne une chaîne de caractères formatée avec le titre et l’auteur du livre
     getDetails() {
-        return `Titre : "${this.title}" / Autheur : ${this.autor}`;
+        return `Titre : "${this.title}" / Auteur : ${this.author}`;
     }
 
 }

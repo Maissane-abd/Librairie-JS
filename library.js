@@ -1,6 +1,7 @@
+// Module pour la gestion de la bibliothèque.
 export class Library {
 
-    // Un tableau pour stocker une liste de livres
+    // Un tableau pour stocker une liste de livres, il contient tous les livres ajoutés à la bibliothèque
     list = []
 
     // Une méthode addBook(book) qui permet d’ajouter un livre à la bibliothèque
@@ -10,9 +11,8 @@ export class Library {
     
     // Une méthode listBooks() qui affiche dans la console tous les livres de la bibliothèque (1 point).
     listBooks(){
-        // console.log(this.list);
         this.list.forEach(element => {
-            console.log(element);
+            console.log(element.title - element.author);
         });
     }
 
