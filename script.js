@@ -46,4 +46,10 @@ searchForm.addEventListener('submit', (e) => {
   const searchTitle = document.getElementById('searchTitle').value.trim();
   const result = library.findBookByTitle(searchTitle);
   searchResult.textContent = result;
+  
+  if (result.includes('n\'a pas été trouvé')) {
+    searchResult.classList.add('error'); 
+  } else {
+    searchResult.classList.remove('error'); 
+  }
 });

@@ -107,6 +107,12 @@
     font-weight: bold;
     color: #27ae60;
   }
+
+  /* Search result error */
+  #searchResult.error {
+    color: #e74c3c; /* rouge pour erreur */
+  }
+
   
   /* Responsive */
   @media screen and (max-width: 600px) {
