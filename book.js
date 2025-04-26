@@ -10,7 +10,7 @@ export class Book {
 
     // Méthode getDetails() qui retourne une chaîne de caractères formatée avec le titre et l’auteur du livre
     getDetails() {
-        return `"${this.title}" est un livre de ${this.autor}.`;
+        return `Titre : "${this.title}" / Autheur : ${this.autor}`;
     }
 
 }
